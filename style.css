@@ -1,7 +1,8 @@
-p{
-    display: flex;
-    justify-content: center;
+body{
+    text-align: center;
     font-family: 'Roboto', sans-serif;
+    font-size: 20pt;
 }
+
 
 

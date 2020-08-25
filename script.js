@@ -1,12 +1,16 @@
 let model = "model/model.json";
 let classifier;
 let video;
+let pLabel;
+let pConf;
 
 function setup() {
   noCanvas();
 
   video = createCapture(VIDEO);
-  video.style("display: flex; justify-self: center; border-radius: 5%;");
+  video.size(350, 350);
+  pLabel = createP("It seems like you're: ");
+  pConf = createP();
 
 
   classifier = ml5.imageClassifier(model, video, modelReady);
@@ -21,7 +25,13 @@ function gotResult(error, results) {
   if (error) {
     console.error();
   } else {
-    document.getElementById("bestmatch").innerHTML = "It seems like you're " + results[0].label;
+    // document.getElementById("bestmatch").innerHTML = "It seems like you're " + results[0].label;
+    pLabel.html("It seems like you're " + results[0].label);
+    pConf.html("I'm " + results[0].confidence + "% sure");
+
+
     classifier.predict(gotResult);
+
   }
+
 }
