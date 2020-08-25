@@ -11,7 +11,7 @@ a local web server using Python SimpleHTTP. Open your terminal and type in the p
 
 With python3 installed on your computer:
 
-```bash
+```
 cd /path/to/ML-Elective_Ivic-Matijas
 
 python -m http.server 8000
@@ -19,13 +19,13 @@ python -m http.server 8000
 
 With python2.7 installed on your computer:
 
-```bash
+```
 cd /path/to/ML-Elective_Ivic-Matijas
 
 python -m SimpleHTTPServer 8000
 ```
 
-When the server started, open your browser and type in *localhost:8000*
+When the server started, open your browser and type in **localhost:8000**
 
 It is possible that the stylesheet of this project will not be loaded. In this case, just clear the cache of your browser
 and you should be good to go.
