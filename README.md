@@ -30,4 +30,4 @@ When the server started, open your browser and type in **localhost:8000**
 It is possible that the stylesheet of this project will not be loaded. In this case, just clear the cache of your browser
 and you should be good to go.
 
-**Sit closer to the camera for better results**
+**PS: Sit closer to the camera for better results**
