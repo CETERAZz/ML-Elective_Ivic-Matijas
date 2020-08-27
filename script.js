@@ -29,7 +29,7 @@ function gotResult(error, results) {
     pLabel.html("It seems like you're " + results[0].label);
     pConf.html("I'm " + results[0].confidence + "% sure");
 
-
+    console.log(results[0].label);
     classifier.predict(gotResult);
 
   }
